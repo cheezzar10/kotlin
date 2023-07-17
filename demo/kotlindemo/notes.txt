@@ -1,0 +1,5 @@
+generating maven project using archetype
+
+$ mvn archetype:generate -DgroupId=com.imc.edu -DartifactId=kotlindemo -DpackageName=com.imc.edu.kotlindemo -Dversion=0.1-SNAPSHOT -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
