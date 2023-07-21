@@ -1,0 +1,7 @@
+building classes using command line tools
+
+$ kotlinc src/main/kotlin/learn/atomic/functional/Lambdas.kt -include-runtime -d target/lambdas.jar
+
+running using plain java command
+
+$ java -cp target/lambdas.jar learn.atomic.functional.LambdasKt
