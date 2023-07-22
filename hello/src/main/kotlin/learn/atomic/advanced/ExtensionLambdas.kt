@@ -22,6 +22,8 @@ fun myBuildString(builder: StringBuilder.() -> Unit): String {
     return stringBuilder.toString()
 }
 
+fun String.transform(n: Int, f: String.(Int) -> String) = this.f(n)
+
 fun main() {
     // just plain lambda function
     val va: (String, Int) -> String = { str, n ->
@@ -62,5 +64,9 @@ fun main() {
         val (name, age) = this
 
         println("name: $name, age: $age")
+    }
+
+    val transformed = "ab".transform(5) { n ->
+        repeat(n)
     }
 }
