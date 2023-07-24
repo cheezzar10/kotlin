@@ -12,5 +12,8 @@ fun main() {
 fun listFactory(vararg elements: Int): List<Int> {
     println("elements class: ${elements.javaClass}")
 
-    return listOf(*elements.toTypedArray())
+    val typedArray = elements.toTypedArray()
+    println("typed array type: ${typedArray.javaClass}")
+
+    return listOf(*typedArray)
 }
