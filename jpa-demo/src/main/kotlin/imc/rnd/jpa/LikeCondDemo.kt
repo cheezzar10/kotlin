@@ -11,7 +11,9 @@ fun main() {
             }
 
             // create empty Any? array using arrayOf
-            val emptyArray: Array<Any?> = arrayOfNulls(0)
+            val emptyArray: Array<Any?> = emptyArray()
+            println("empty array kotlin class ${emptyArray.javaClass.kotlin}")
+
             val query = em.createQuery(
                 "select cr.id, cr.path from Resource vr, Resource cr where vr.id = 1 and cr.path like concat(vr.path, '%')",
                 emptyArray.javaClass)
