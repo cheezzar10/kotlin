@@ -1,0 +1,4 @@
+# creating test database
+postgres=# create user jpademo with createdb password 'password';
+postgres=# \c template1 jpademo;
+template1=> create database jpademo;
